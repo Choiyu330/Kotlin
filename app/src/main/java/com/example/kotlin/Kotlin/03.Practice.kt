@@ -6,7 +6,7 @@ var c = b.toInt()
 var d = b.toFloat()
 
 var e = "YuJin"
-var f = "My name is $e Nice to meet you"
+var f = "My name is $e Nice to meet you!"
 
 fun main(array: Array<String>) {
     println(a)
