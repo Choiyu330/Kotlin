@@ -16,7 +16,4 @@ fun main(array: Array<String>) {
     println(e)
     println(f)
 
-
-
-
 }
