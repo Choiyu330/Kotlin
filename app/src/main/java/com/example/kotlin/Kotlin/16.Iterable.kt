@@ -75,7 +75,8 @@ fun main(array: Array<String>) {
     println()
 
     // 반복하는 방법 (10)
-    for (i in 0..10) {
+    // ..은 마지막을 포함한다
+    for (i in 0..a.size) {
         println(i)
     }
 }
