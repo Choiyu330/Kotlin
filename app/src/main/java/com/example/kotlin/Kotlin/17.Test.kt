@@ -6,6 +6,23 @@ package com.example.kotlin.Kotlin
 // 두 번째 List 에는 첫 번째 List 의 값을 하나씩 확인한 후
 // 짝수면 True 홀수면 False 를 넣어준다
 
+fun main(args: Array<String>) {
+
+    val numberList = listOf<Int>(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+    val numberList2 = listOf<Int>()
+
+    println(numberList)
+
+    for (item in 0 until numberList.size) {
+        if (item % 2 == 0)
+            numberList2.get(1)
+        else
+            numberList.get(0)
+    }
+    println(numberList2)
+}
+
+
 // 2번 문제
 // 학점을 구하기
 // 80 - 90 -> A
