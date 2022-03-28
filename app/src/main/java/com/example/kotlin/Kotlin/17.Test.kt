@@ -22,6 +22,7 @@ fun main(args: Array<String>) {
     println(numberList2)
 }
 
+
 // 2번 문제
 // 학점을 구하기
 // 80 - 90 -> A
