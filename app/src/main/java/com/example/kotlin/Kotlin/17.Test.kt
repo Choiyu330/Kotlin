@@ -6,23 +6,6 @@ package com.example.kotlin.Kotlin
 // 두 번째 List 에는 첫 번째 List 의 값을 하나씩 확인한 후
 // 짝수면 True 홀수면 False 를 넣어준다
 
-fun main(args: Array<String>) {
-
-    val numberList = listOf<Int>(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
-    val numberList2 = listOf<Int>()
-
-    println(numberList)
-
-    for (item in 0 until numberList.size) {
-        if (item % 2 == 0)
-            numberList2.get(1)
-        else
-            numberList.get(0)
-    }
-    println(numberList2)
-}
-
-
 // 2번 문제
 // 학점을 구하기
 // 80 - 90 -> A
@@ -36,3 +19,70 @@ fun main(args: Array<String>) {
 
 // 4번 문제
 // 구구단 출력하기
+
+fun main(args: Array<String>) {
+
+    first()
+    second(80)
+    third(12, 23)
+    fourth()
+}
+
+
+// 1번 문제
+fun first() {
+
+    val numberList = mutableListOf<Int>()
+    val stringList = mutableListOf<String>()
+
+    for (i in 0 until 10) {
+        numberList.add(i)
+    }
+    println(numberList)
+
+    for (i in 0 until numberList.size) {
+        if (numberList.get(i) % 2 == 1)
+            stringList.add("False")
+        else
+            stringList.add("True")
+    }
+    println(stringList)
+}
+
+
+// 2번문제
+fun second(score: Int) {
+
+    if (score <= 90 && score >= 80)
+        println("A")
+    else if (score <= 79 && score >= 70)
+        println("B")
+    else if (score <= 69 && score >= 60)
+        println("C")
+    else
+        println("F")
+}
+
+
+// 3번 문제
+fun third(num1: Int, num2: Int) {
+
+    println("num1 + num2 : " + (num1 + num2))
+}
+
+
+// 4번 문제
+fun fourth() {
+
+    var i = 1
+    var j = 1
+    for (item in 1..9) {
+        i++
+
+        for (item in 1..9) {
+            j++
+        }
+        println(i + " x " + j + " = " + i*j)
+    }
+
+}
