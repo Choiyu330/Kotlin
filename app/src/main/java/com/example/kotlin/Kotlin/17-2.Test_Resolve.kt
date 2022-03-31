@@ -1,4 +1,5 @@
 package com.example.kotlin.Kotlin
+/*
 
 fun main(array: Array<String>) {
 
@@ -63,3 +64,4 @@ fun gugudan() {
         }
     }
 }
+*/
