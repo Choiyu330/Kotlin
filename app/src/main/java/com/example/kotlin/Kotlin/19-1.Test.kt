@@ -12,7 +12,7 @@ fun main(array: Array<String>) {
 
     val bkaccount = BankAccount()
     bkaccount.create("최유진", "990330")
-    bkaccount.deposit(1000)
+    bkaccount.deposit(2000)
     bkaccount.withdraw(800)
 }
 
